@@ -17,7 +17,8 @@ def test_challenge_three_write_to_file(project_root):
     driver.get("https://www.copart.com")
     popularMakes = driver.find_elements_by_xpath(
         "//*[@ng-repeat='popularSearch in popularSearches']//a")
-    f = open(os.path.join(project_root, 'test_results/test_challenge_three.txt'), "w")
+    f = open(os.path.join(project_root,
+             'test_results/test_challenge_three.txt'), "w")
     for make in popularMakes:
         innerHTML = make.get_attribute('innerHTML')
         href = make.get_attribute('href')
