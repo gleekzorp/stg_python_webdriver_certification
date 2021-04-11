@@ -31,9 +31,10 @@ I originally did these challenges during the autobots meetup.  I wanted a refres
     - Make sure you pick pytest
     - It is a good idea to reload your window after setting this up
   - For pycharm go into your `preferences/settings` and under the `python integrated tools` you will see a spot for default test runner, go ahead and choose `pytest`.
-- You can now either use the cool new `play/run` icons or run the following command in your terminal.  Make sure you're in the correct folder when you run this command.
+- You can now either use the cool new `play/run` icons or run the following command in your terminal.
 ```
-(venv) $ pytest test_01_challenge.py
+(venv) $ python -m pytest
+(venv) $ python -m pytest --help
 ```
 
 ## vscode settings.json
